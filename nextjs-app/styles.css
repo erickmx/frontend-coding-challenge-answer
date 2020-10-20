@@ -67,3 +67,47 @@ body {
   color: #f3f3f3;
   font-weight: 600;
 }
+
+.outdoorsy__image {
+  width: 100%;
+  height: 9rem;
+  background-color: #d3d3d3;
+  /* object-fit: fill; */
+  border-radius: 5px;
+  box-shadow: 0 3px 3px -3px black;
+}
+
+.list-vehicle__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #2a2a2a;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.listitem__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow-wrap: break-word;
+}
+
+.score__container {
+  display: flex;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.vehicle-info__container {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.vehicle-info__location {
+  color: #5c6972;
+  font-weight: 600;
+}
