@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .outdoorsy__body {
@@ -14,8 +14,56 @@ body {
 }
 
 .outdoorsy__title {
-  color: 333a40;
+  color: #333a40;
   font-size: 2rem;
   font-weight: 600;
   line-height: 2.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.searchbar__container {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.searchbar__label {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  color: #2a2a2a;
+  margin: 0.2rem;
+}
+
+.searchbar__input {
+  width: 100%;
+  height: 2rem;
+  border: 1px solid #a8a8a8;
+  border-radius: 5px;
+  margin: 0.2rem;
+}
+
+.outdoorsy__button {
+  background-color: #f2f2f2;
+  height: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  margin: 0.2rem;
+  margin-left: 1rem;
+}
+
+.outdoorsy__button--action {
+  background-color: #378a0c;
+  color: #f3f3f3;
+  font-weight: 600;
 }
