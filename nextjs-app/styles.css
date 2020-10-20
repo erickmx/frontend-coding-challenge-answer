@@ -3,3 +3,19 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.outdoorsy__body {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.outdoorsy__title {
+  color: 333a40;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+}

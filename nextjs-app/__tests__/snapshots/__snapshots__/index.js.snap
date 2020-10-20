@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div
+  className="max-w-screen-xl mx-auto mt-8 outdoorsy__body"
+>
+  <h1
+    className="outdoorsy__title"
+  >
+    Campervans
+  </h1>
+</div>
+`;
