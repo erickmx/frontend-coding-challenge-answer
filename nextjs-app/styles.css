@@ -57,10 +57,10 @@ body {
 .outdoorsy__button {
   background-color: #f2f2f2;
   height: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.2rem;
@@ -68,6 +68,9 @@ body {
   border-radius: 5px;
   margin: 0.2rem;
   margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .outdoorsy__button--action {
@@ -78,10 +81,10 @@ body {
 
 .outdoorsy__image {
   width: 100%;
-  height: 9rem;
+  height: 12rem;
   background-color: #d3d3d3;
   /* object-fit: fill; */
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 0 3px 3px -3px black;
 }
 
@@ -120,6 +123,14 @@ body {
   display: flex;
   font-size: 1rem;
   line-height: 1.2rem;
+  color: #2f3438;
+}
+
+.score__votes {
+  display: flex;
+  font-size: 0.8rem;
+  color: #88959f;
+  margin-left: 1rem;
 }
 
 .vehicle-info__container {
@@ -133,8 +144,17 @@ body {
 }
 
 .vehicle-info__location {
-  color: #5c6972;
+  color: #88959f;
   font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.vehicle-info__name {
+  line-height: 1.5rem;
+  color: #2f3438;
+  font-size: 0.9rem;
 }
 
 .vehicle-info__list {
@@ -144,7 +164,7 @@ body {
 }
 
 .vehicle-info__list > .outdoorsy__image {
-  height: 30vh;
+  height: 40vh;
 }
 
 .vehicle-info__list > .outdoorsy__image:last-child {
@@ -176,7 +196,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 700px) {
@@ -192,6 +213,7 @@ body {
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .listitem__container {
@@ -201,6 +223,9 @@ body {
 
   .listitem__info {
     margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .vehicle-info__list {
@@ -210,11 +235,11 @@ body {
 
   .vehicle-info__list > .outdoorsy__image {
     width: 49.5%;
-    height: 35vh;
+    height: 55vh;
   }
 
   .outdoorsy__image--no-border {
-    height: 40vh;
+    height: 55vh;
   }
 
   .vehicle-info__list > .outdoorsy__image:last-child {
@@ -223,6 +248,10 @@ body {
 
   .outdoorsy__image--circular {
     width: 4rem;
+  }
+
+  .vehicle-info__container {
+    margin-top: 0;
   }
 
   .vehicle-info__container--margin {
@@ -243,6 +272,20 @@ body {
   .owner__info {
     margin-left: 25vw;
     margin-right: 25vw;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .outdoorsy__image {
+    width: 90%;
+  }
+
+  .outdoorsy__image--circular {
+    width: 4rem;
+  }
+
+  .listitem__container {
+    flex-direction: column;
   }
 }
 

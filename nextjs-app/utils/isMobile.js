@@ -17,5 +17,5 @@ function detectMob() {
 */
 
 export default function isMobile() {
-  return typeof window !== 'undefined' && window.innerWidth <= 800 && window.innerHeight <= 600;
+  return typeof window !== 'undefined' && window.innerWidth <= 700 && window.innerHeight <= 600;
 }

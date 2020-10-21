@@ -5,9 +5,7 @@ export default function VehicleInfo({ type, city, state, name, className }) {
   return (
     <div className={`vehicle-info__container ${className}`}>
       <p className="vehicle-info__location">
-        <b>
-          {type} &#8226; {city}, {state}
-        </b>
+        {type} &#8226; {city}, {state}
       </p>
       <p className="vehicle-info__name">
         <b>{name}</b>
