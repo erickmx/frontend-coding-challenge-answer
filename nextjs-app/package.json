@@ -12,10 +12,13 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "axios": "^0.20.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "next": "9.3.5",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-rating-stars-component": "^2.2.0"
   },
   "husky": {
     "hooks": {

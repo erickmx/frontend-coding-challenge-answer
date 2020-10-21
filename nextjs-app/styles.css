@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .outdoorsy__body {
@@ -13,9 +13,300 @@ body {
   margin-right: 4vw;
 }
 
+.outdoorsy__body--no-margin {
+  margin: 0;
+}
+
 .outdoorsy__title {
-  color: 333a40;
+  color: #333a40;
   font-size: 2rem;
   font-weight: 600;
   line-height: 2.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.searchbar__container {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.input__container {
+  width: 100%;
+}
+
+.searchbar__label {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  color: #2a2a2a;
+  margin: 0.2rem;
+}
+
+.searchbar__input {
+  width: 100%;
+  height: 2rem;
+  border: 1px solid #a8a8a8;
+  border-radius: 5px;
+  margin: 0.2rem;
+}
+
+.outdoorsy__button {
+  background-color: #f2f2f2;
+  height: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  margin: 0.2rem;
+  margin-left: 1rem;
+}
+
+.outdoorsy__button--action {
+  background-color: #378a0c;
+  color: #f3f3f3;
+  font-weight: 600;
+}
+
+.outdoorsy__image {
+  width: 100%;
+  height: 9rem;
+  background-color: #d3d3d3;
+  /* object-fit: fill; */
+  border-radius: 5px;
+  box-shadow: 0 3px 3px -3px black;
+}
+
+.outdoorsy__image--circular {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #bebebe;
+  margin-right: 1rem;
+}
+
+.outdoorsy__image--no-border {
+  border-radius: 0;
+}
+
+.list-vehicle__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #2a2a2a;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.listitem__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow-wrap: break-word;
+}
+
+.score__container {
+  display: flex;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.vehicle-info__container {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.vehicle-info__container--margin {
+  margin-left: 1rem;
+  margin-top: -3.5rem;
+}
+
+.vehicle-info__location {
+  color: #5c6972;
+  font-weight: 600;
+}
+
+.vehicle-info__list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.vehicle-info__list > .outdoorsy__image {
+  height: 30vh;
+}
+
+.vehicle-info__list > .outdoorsy__image:last-child {
+  display: none;
+}
+
+.owner__info {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.price-circle__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #378a0c;
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  bottom: 2.5rem;
+  border-radius: 50%;
+  color: #f3f3f3;
+  font-weight: 600;
+  right: -70vw;
+}
+
+.loading__footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+@media (min-width: 700px) {
+  .searchbar__container {
+    width: 50%;
+  }
+
+  .outdoorsy__image {
+    width: 50%;
+  }
+
+  .list-vehicle__container {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .listitem__container {
+    width: 44vw;
+    flex-direction: row;
+  }
+
+  .listitem__info {
+    margin-left: 1rem;
+  }
+
+  .vehicle-info__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .vehicle-info__list > .outdoorsy__image {
+    width: 49.5%;
+    height: 35vh;
+  }
+
+  .outdoorsy__image--no-border {
+    height: 40vh;
+  }
+
+  .vehicle-info__list > .outdoorsy__image:last-child {
+    display: block;
+  }
+
+  .outdoorsy__image--circular {
+    width: 4rem;
+  }
+
+  .vehicle-info__container--margin {
+    margin-top: 1.5rem;
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+
+  .price-circle__container {
+    right: 0;
+    bottom: 0;
+    float: right;
+    position: relative;
+    margin-top: 1.5rem;
+    margin-right: 25vw;
+  }
+
+  .owner__info {
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+}
+
+/* https://projects.lukehaas.me/css-loaders/ */
+.loader {
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #7d7878;
+  background: -moz-linear-gradient(left, #7d7878 10%, rgba(125, 120, 120, 0) 42%);
+  background: -webkit-linear-gradient(left, #7d7878 10%, rgba(125, 120, 120, 0) 42%);
+  background: -o-linear-gradient(left, #7d7878 10%, rgba(125, 120, 120, 0) 42%);
+  background: -ms-linear-gradient(left, #7d7878 10%, rgba(125, 120, 120, 0) 42%);
+  background: linear-gradient(to right, #7d7878 10%, rgba(125, 120, 120, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #7d7878;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader:after {
+  background: #7d7878;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }

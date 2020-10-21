@@ -9,5 +9,48 @@ exports[`renders homepage unchanged 1`] = `
   >
     Campervans
   </h1>
+  <form
+    className="searchbar__container"
+    onSubmit={[Function]}
+  >
+    <div
+      className="input__container"
+    >
+      <label
+        className="searchbar__label"
+        htmlFor="search-bar"
+      >
+        Filter
+      </label>
+      <input
+        className="searchbar__input"
+        id="search-bar"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+    <button
+      className="outdoorsy__button outdoorsy__button--action"
+      onClick={[Function]}
+      type="button"
+    >
+      Filter
+    </button>
+  </form>
+  <div
+    className="list-vehicle__container"
+  />
+  <div
+    className="loading__footer"
+  >
+    <button
+      className="outdoorsy__button outdoorsy__button--action"
+      onClick={[Function]}
+      type="button"
+    >
+      Loard More
+    </button>
+  </div>
 </div>
 `;
