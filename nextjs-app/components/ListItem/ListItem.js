@@ -10,8 +10,10 @@ export default function ListItem({ type, city, state, name, price, score, votes,
   return (
     <div className="listitem__container">
       <Image alt={name} height="100%" width="4rem" lazy url={image} />
-      <VehicleInfo type={type} city={city} state={state} name={name} />
-      <Score currency={currency} score={score} votes={votes} />
+      <div className="listitem__info">
+        <VehicleInfo type={type} city={city} state={state} name={name} />
+        <Score currency={currency} score={score} votes={votes} />
+      </div>
     </div>
   );
 }

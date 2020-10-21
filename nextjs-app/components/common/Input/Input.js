@@ -3,12 +3,12 @@ import { string, func } from 'prop-types';
 
 export default function Input({ label, value, type, onChange, id }) {
   return (
-    <div>
+    <>
       <label className="searchbar__label" htmlFor={id}>
         {label}
       </label>
       <input className="searchbar__input" id={id} type={type} value={value} onChange={onChange} />
-    </div>
+    </>
   );
 }
 

@@ -167,3 +167,66 @@ body {
   font-weight: 600;
   right: -70vw;
 }
+
+@media (min-width: 700px) {
+  .searchbar__container {
+    width: 50%;
+  }
+
+  .outdoorsy__image {
+    width: 50%;
+  }
+
+  .list-vehicle__container {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .listitem__container {
+    width: 44vw;
+    flex-direction: row;
+  }
+
+  .listitem__info {
+    margin-left: 1rem;
+  }
+
+  .vehicle-info__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .vehicle-info__list > .outdoorsy__image {
+    width: 49%;
+    height: 35vh;
+  }
+
+  .vehicle-info__list > .outdoorsy__image:last-child {
+    display: block;
+  }
+
+  .outdoorsy__image--circular {
+    width: 4rem;
+  }
+
+  .vehicle-info__container--margin {
+    margin-top: 1.5rem;
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+
+  .price-circle__container {
+    right: 0;
+    bottom: 0;
+    float: right;
+    position: relative;
+    margin-top: 1.5rem;
+    margin-right: 25vw;
+  }
+
+  .owner__info {
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+}
