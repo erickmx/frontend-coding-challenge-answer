@@ -48,10 +48,11 @@ body {
 
 .searchbar__input {
   width: 100%;
-  height: 2rem;
+  height: 2.5rem;
   border: 1px solid #a8a8a8;
   border-radius: 5px;
   margin: 0.2rem;
+  padding-left: 0.5rem;
 }
 
 .outdoorsy__button {
@@ -71,6 +72,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 2.5rem;
 }
 
 .outdoorsy__button--action {
@@ -83,7 +85,6 @@ body {
   width: 100%;
   height: 12rem;
   background-color: #d3d3d3;
-  /* object-fit: fill; */
   border-radius: 3px;
   box-shadow: 0 3px 3px -3px black;
 }
@@ -260,6 +261,10 @@ body {
     margin-right: 25vw;
   }
 
+  .vehicle-info__location {
+    margin-top: 0;
+  }
+
   .price-circle__container {
     right: 0;
     bottom: 0;
@@ -277,7 +282,7 @@ body {
 
 @media (min-width: 700px) and (max-width: 1024px) {
   .outdoorsy__image {
-    width: 90%;
+    width: 100%;
   }
 
   .outdoorsy__image--circular {
@@ -286,6 +291,10 @@ body {
 
   .listitem__container {
     flex-direction: column;
+  }
+
+  .vehicle-info__location {
+    margin-top: 1rem;
   }
 }
 

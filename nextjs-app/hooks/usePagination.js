@@ -16,14 +16,22 @@ export default function usePagination(
     setLoading(true);
     const paginationParams = `page[limit]=${limit}&page[offset]=${from * limit}`;
     const urlComplement = baseURL.includes('?') ? `&${paginationParams}` : `?${paginationParams}`;
-    const { data: requestData } = await apiProvider.get(`${baseURL}/${urlComplement}`);
-    setData([...data, ...requestData.data]);
+
+    const { data: requestData } = await apiProvider.get(`${baseURL}${urlComplement}`);
+
+    if (from === 0) {
+      setData([...requestData.data]);
+    } else if (requestData.data.length) {
+      setData([...data, ...requestData.data]);
+    } else {
+      setData([]);
+    }
     setLoading(false);
-  }, [from, limit]);
+  }, [from, limit, baseURL]);
 
   useEffect(() => {
     loadData();
   }, [loadData]);
 
-  return [data, loading, from, setFrom, setLimit];
+  return [data, loading, from, setFrom, setLimit, setData];
 }

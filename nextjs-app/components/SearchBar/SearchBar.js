@@ -16,9 +16,11 @@ export default function SearchBar() {
 
   const onSearch = ev => {
     ev.preventDefault();
+    let url = '/';
     if (text !== '') {
-      router.push(`/?term=${encodeURI(text)}`);
+      url = `/?term=${text.replace(' ', '-').toLowerCase()}`;
     }
+    router.push(url);
     return false;
   };
 
