@@ -13,6 +13,10 @@ body {
   margin-right: 4vw;
 }
 
+.outdoorsy__body--no-margin {
+  margin: 0;
+}
+
 .outdoorsy__title {
   color: #333a40;
   font-size: 2rem;
@@ -77,6 +81,18 @@ body {
   box-shadow: 0 3px 3px -3px black;
 }
 
+.outdoorsy__image--circular {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #bebebe;
+  margin-right: 1rem;
+}
+
+.outdoorsy__image--no-border {
+  border-radius: 0;
+}
+
 .list-vehicle__container {
   display: flex;
   flex-direction: column;
@@ -107,7 +123,47 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.vehicle-info__container--margin {
+  margin-left: 1rem;
+  margin-top: -3.5rem;
+}
+
 .vehicle-info__location {
   color: #5c6972;
   font-weight: 600;
+}
+
+.vehicle-info__list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.vehicle-info__list > .outdoorsy__image {
+  height: 30vh;
+}
+
+.vehicle-info__list > .outdoorsy__image:last-child {
+  display: none;
+}
+
+.owner__info {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.price-circle__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #378a0c;
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  bottom: 2.5rem;
+  border-radius: 50%;
+  color: #f3f3f3;
+  font-weight: 600;
+  right: -70vw;
 }

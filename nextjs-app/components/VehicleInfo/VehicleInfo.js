@@ -1,9 +1,9 @@
 import React from 'react';
 import { string } from 'prop-types';
 
-export default function VehicleInfo({ type, city, state, name }) {
+export default function VehicleInfo({ type, city, state, name, className }) {
   return (
-    <div className="vehicle-info__container">
+    <div className={`vehicle-info__container ${className}`}>
       <p className="vehicle-info__location">
         <b>
           {type} &#8226; {city}, {state}
@@ -21,4 +21,9 @@ VehicleInfo.propTypes = {
   city: string.isRequired,
   state: string.isRequired,
   name: string.isRequired,
+  className: string,
+};
+
+VehicleInfo.propTypes = {
+  className: '',
 };
