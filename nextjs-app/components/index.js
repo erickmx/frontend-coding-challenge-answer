@@ -7,3 +7,4 @@ export * from './Score';
 export * from './ImageDetail';
 export * from './OwnerInfo';
 export * from './PriceCircle';
+export * from './Loading';

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { shape, arrayOf, string, number } from 'prop-types';
+import { shape, arrayOf, string, number, oneOfType } from 'prop-types';
 
 import { ListItem } from '../ListItem';
 
@@ -31,7 +31,7 @@ export default function ListVehicles({ vehicles }) {
 ListVehicles.propTypes = {
   vehicles: arrayOf(
     shape({
-      id: number.isRequired,
+      id: oneOfType([string, number]).isRequired,
       attributes: shape({
         location: shape({
           city: string,
