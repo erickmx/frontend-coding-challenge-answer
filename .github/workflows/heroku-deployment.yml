@@ -27,16 +27,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-        heroku_app_name: ${{ secrets.HEROKU_APPNAME }} #Must be unique in Heroku
-        heroku_email: ${{ secrets.HEROKU_EMAIL }}
-        healthcheck: "https://${{ secrets.HEROKU_APPNAME }}.herokuapp.com/health"
-        procfile: "web: npm start"
 
-    - run: npm install
     - run: npm run lint
     - run: npm run build --if-present
-    - run: npm test:ci
+    - run: npm run test:ci
     - name: Login to Heroku Container registry
       env: 
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
