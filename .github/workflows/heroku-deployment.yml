@@ -15,7 +15,7 @@ jobs:
     
     defaults:
       run:
-        working-directory: ${{ secrets.WORKING_DIRECTORY }}
+        working-directory: ./nextjs-app
 
     strategy:
       matrix:
