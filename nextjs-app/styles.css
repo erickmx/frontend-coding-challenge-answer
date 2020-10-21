@@ -198,8 +198,12 @@ body {
   }
 
   .vehicle-info__list > .outdoorsy__image {
-    width: 49%;
+    width: 49.5%;
     height: 35vh;
+  }
+
+  .outdoorsy__image--no-border {
+    height: 40vh;
   }
 
   .vehicle-info__list > .outdoorsy__image:last-child {
